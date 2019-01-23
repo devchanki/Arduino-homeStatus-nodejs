@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>김기찬 homecare</title>
+    <link rel="stylesheet" href="client/index.css"/>
+    <!--    -->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="title">13050009 마지막 에디슨 발표</div>
+
+    <div class="container">
+        <span class="sub-title">집 안 소음</span>
+        <div id="sound-sensor"><a id="sound"></a></div>
+    </div>
+
+    <div class="temperature">
+      <h1>집 온도계</h1>
+      <div class="temp-show">
+        <img src="./temp.jpeg">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="door">
+      <h1>집 문 제어</h1>
+      <div class="door-show">
+        <div class="door-control-box">
+          <button type="button" id="open" >열기</button>
+          <button type="button" id="close" >닫기</button>
+        </div>
+        <span id="door-status"></span>
+      </div>
+    </div>
+
+    <div class="power">
+      <h1>집 안 전기 제어</h1>
+      <div class="power-show">
+        <div class="power-control-box"><a id="power-control">집전기 제어</a></div>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="detect">
+      <h1>침입감지 시스템</h1>
+      <div class="detect-show">
+        <div class="detect-control-box"><span id="detect-control"></span></div>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="detect">
+      <h1>화재감지 시스템</h1>
+      <div class="detect-fire">
+        <div class="detect-fire-box"><span id="detect-fire"></span></div>
+        <span></span>
+      </div>
+    </div>
+
+    <script src="client/index.js"></script>
+</body>
+</html>
